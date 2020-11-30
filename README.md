@@ -8,6 +8,6 @@ Chat-bot class is in movie_recommender.py script.
 At first you need your own api-key for telegram bot, save it in "api_key_for_bot.txt" file in current path.
 
 Next run the script.
-Write to the bot, rate the films, save it.
+Write to the bot, rate movies and save it.
 
-Remember the bot talks and understand only russian language.
+Remember that the bot can only speak and understand Russian
