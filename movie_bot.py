@@ -340,8 +340,8 @@ def main():
     
     """Run bot."""
     
-    data_movies = pd.read_csv('df_movies.csv', index_col=[0])
-    data_ratings = pd.read_csv('df_ratings.csv', index_col=[0])
+    data_movies = pd.read_csv('data/df_movies.csv', index_col=[0])
+    data_ratings = pd.read_csv('data/df_ratings.csv', index_col=[0])
 
     movie_recommender_bot = MovieRecommender(data_movies, data_ratings)
 
