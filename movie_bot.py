@@ -340,16 +340,18 @@ def main():
     
     """Run bot."""
     
-    data_movies = pd.read_csv('df_movies.csv')
-    data_ratings = pd.read_csv('df_ratings.csv')
+    data_movies = pd.read_csv('df_movies.csv', index_col=[0])
+    data_ratings = pd.read_csv('df_ratings.csv', index_col=[0])
 
     movie_recommender_bot = MovieRecommender(data_movies, data_ratings)
 
     # Learn with default parameters
     movie_recommender_bot.learn()
 
-    # movie_recommender_bot.run()
-    print(movie_recommender_bot.get_recommendation_for_user())
+    print('Run the bot...')
+    movie_recommender_bot.run()
+
+    # print(movie_recommender_bot.get_recommendation_for_user())
 
 
 if __name__ == '__main__':
